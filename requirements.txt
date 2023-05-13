@@ -1,0 +1,4 @@
+Flask==2.2.2
+keras==2.8.0
+numpy==1.21.4
+Pillow==9.5.0

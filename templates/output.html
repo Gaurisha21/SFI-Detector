@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="../static/favicon.ico">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+  <!-- ==== Style Sheet===== -->
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+    <title>Reporting</title>
+  </head>
+  <body>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="http://www.hygenie.tech" class="nav__logo"><img src="../static/img/logo.png" alt=""></a></a>
+  
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="http://www.hygenie.tech" class="nav__link ">Home</a></li>
+              <li class="nav__item"><a href="https://hygenie.tech/search" class="nav__link " >Search</a></li>
+            <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+          </ul>
+        </div>
+  
+        <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-grid-alt'></i>
+        </div>
+      </nav>
+    </header>
+    <section class="report" id="report">
+      <div class="report__container bd-container bd-grid ">
+        <h1 class="main-heading home__title" style="align-self: center">Clean Toilet Detector</h1>
+<!--        <h2 class="section-heading">Upload the image of the toilet.</h2>-->
+<!--        <div class="card" style="background-color:white; align-self:center; width:inherit">-->
+        <div class="container">
+          <h4>The toilet seems <b>{{label}}</b> with the confidence score of <b>{{score}}</b></h4>
+          <!--          <p>Architect & Engineer</p>-->
+        </div>
+        <img src="data:image/png;base64,{{image}}" alt="Washroom" style="width:50%; height:50%; align-self: center">
+<!--      </div>-->
+      </div>
+    </section>
+  </body>
+  <script src="../static/js/main.js"></script>
+  <script src="../static/js/report.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  
+</html>
